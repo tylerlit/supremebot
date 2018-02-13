@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "supreme bot",
+	"version": "0.2",
+
+	"content_scripts": [{ 
+		"matches": ["http://www.supremenewyork.com/shop/*"],
+		"run_at": "document_end",
+    	"js": ["jquery-3.2.1.slim.js", "bot.js"]
+	},
+	{
+		"matches": ["https://www.supremenewyork.com/checkout"],
+		"run_at": "document_end",
+    	"js": ["jquery-3.2.1.slim.js", "bot2.js"]
+    }]
+}
